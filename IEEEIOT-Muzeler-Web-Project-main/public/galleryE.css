@@ -1,0 +1,364 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #2c0505;
+    font-family: Tahoma;
+    overflow-x: hidden;
+}
+
+.polaroid {
+
+    background-color: rgb(238, 225, 225);
+    padding: 1rem;
+    box-shadow: 0 02rem 1.2rem rgba(126, 22, 22, 0.2);
+}
+
+.polaroid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.item {
+    width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+}
+
+.item.polaroid:before {
+    content: '';
+    position: static;
+    z-index: -1;
+    transition: all 0.35;
+
+}
+
+.item:nth-of-type(5n+1) {
+    transform: scale(0.8, 0.8) rotate(5deg);
+    transition: all 0.35s;
+}
+
+.item:nth-of-type(5n+1).polaroid:before {
+    transform: rotate(6deg);
+    height: 30%;
+    width: 50%;
+    right: 15px;
+    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.item:nth-of-type(5n+2) {
+    transform: scale(0.8, 0.8) rotate(-5deg);
+    transition: all 0.35s;
+
+}
+
+.item:nth-of-type(5n+2).polaroid:before {
+    transform: rotate(-6deg);
+    height: 30%;
+    width: 50%;
+    right: 15px;
+    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.item:nth-of-type(5n+5) {
+    transform: scale(0.8, 0.8) rotate(3deg);
+    transition: all 0.35s;
+
+}
+
+.item:nth-of-type(5n+5).polaroid:before {
+    transform: rotate(4deg);
+    height: 30%;
+    width: 50%;
+    right: 15px;
+    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.item:nth-of-type(5n+4) {
+    transform: scale(0.8, 0.8) rotate(-3deg);
+    transition: all 0.35s;
+
+}
+
+.item:nth-of-type(5n+4).polaroid:before {
+    transform: rotate(-4deg);
+    height: 30%;
+    width: 50%;
+    right: 15px;
+    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.item:nth-of-type(5n+6) {
+    transform: scale(0.8, 0.8) rotate(-2deg);
+    transition: all 0.35s;
+
+}
+
+.item:nth-of-type(5n+6).polaroid:before {
+    transform: rotate(-4deg);
+    height: 30%;
+    width: 50%;
+    right: 15px;
+    box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.item:hover {
+    filter: none;
+    transform: scale(1.1) rotate(0deg) !important;
+    transition: all 0.35s;
+
+}
+
+.item:hover.polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    transition: all 0.35s;
+
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2c0505;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #2c0505;
+    color: white;
+}
+
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}

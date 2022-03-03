@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>ColorBlind-Simulation</title>
+    <link rel="stylesheet" href="../public/css/btn.css">
+    
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Renk Körlüğü Testi</span>
+    </nav>
+
+    <!-- SORUBAR -->
+    <div class="container pt-5" id="anaEkran">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-5 d-none" id="2"><img src="../public/img/2.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="3"><img src="../public/img/3.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="5"><img src="../public/img/5.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="6"><img src="../public/img/6.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="7"><img src="../public/img/7.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="8"><img src="../public/img/8.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="12"><img src="../public/img/12.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="16"><img src="../public/img/16.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="29"><img src="../public/img/29.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="42"><img src="../public/img/42.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="45"><img src="../public/img/45.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-sm-5 d-none" id="97"><img src="../public/img/97.jpg" style="max-width: 100%;" alt="Responsive image" ></div>
+            <div class="col-md-auto">
+                <div class="row justify-content-md-center pt-5">
+                    <div class="col"><button type="button" class="btn btn-outline-info btn-lg px-4" id="1b">1</button>
+                    </div>
+                    <div class="col"><button type="button" class="btn btn-outline-info btn-lg px-4" id="2b">2</button>
+                    </div>
+                    <div class="col"><button type="button" class="btn btn-outline-info btn-lg px-4" id="3b">3</button>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center pt-3">
+                    <div class="col"><button type="button" class="btn btn-outline-info btn-lg px-4" id="4b">4</button>
+                    </div>
+                    <div class="col"><button type="button" class="btn btn-outline-info btn-lg px-4" id="5b">5</button>
+                    </div>
+                    <div class="col"><button type="button" class="btn btn-outline-info btn-lg px-4" id="6b">6</button>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center pt-3">
+                    <div class="col"><button type="button" class="btn btn-outline-info btn-lg px-4" id="7b">7</button>
+                    </div>
+                    <div class="col"><button type="button" class="btn btn-outline-info btn-lg px-4" id="8b">8</button>
+                    </div>
+                    <div class="col"><button type="button" class="btn btn-outline-info btn-lg px-4" id="9b">9</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center pt-3 ">
+                    <div class="col-4"><button type="button" class="btn btn-outline-info btn-lg px-4 align-content-center" id="0b">0</button>
+                    </div>
+                </div>
+                <div class="input-group py-5">
+                    <input type="text" class="form-control py-2" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2" id="input">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary px-4" type="button" id="backspaceBtn"><-</button>
+                        <button class="btn btn-outline-secondary px-4" type="button" id="c">C</button>
+                        <button class="btn btn-outline-secondary px-4" type="button" id="submit">OK</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- BAŞARIBAR -->
+    <div class="container pt-5 d-none" id="basariEkrani">
+        <h1 class="text-center">TEBRİKLER</h1>
+        <h2 class="text-center">RENK KÖRÜ DEĞİLSİNİZ</h2>
+        <p class="text-center" id="basariSonuc"></p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a class="btn btn-outline-info btn-lg px-4" href="https://colorblind-test.herokuapp.com/" role="button">Tekrar Denemek İstermisiniz?</a>
+                </div>
+    
+            </div>
+        </div>
+    
+    </div>
+    <!-- YENİLGİBAR -->
+    <div class="container pt-5 d-none" id="yenilgiEkrani">
+        <h1 class="text-center">TEBRİKLER</h1>
+        <h2 class="text-center">KÖRSÜNÜZ</h2>
+        <p class="text-center" id="yenilgiSonuc"></p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a class="btn btn-outline-info btn-lg px-4" href="https://colorblind-test.herokuapp.com/" role="button">Tekrar Deneyin</a>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="../public/js/randomArray.js"></script>
+    <script type="text/javascript" src="../public/js/enterNumber.js"></script>
+</body>
+
+</html>

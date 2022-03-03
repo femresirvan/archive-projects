@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE-IoT Müzeler Projesi</title>
+    <link rel="stylesheet" href="../public/galleryE.css">
+
+</head>
+
+<body>
+    <br>
+    <h1 style="text-align: center; color:rgb(240, 229, 234);">IEEE-IoT Kuluçka Takımı Müzeler Projesi</h1>
+
+    <div class=" wrapper">
+        <div class="item">
+            <div class="polaroid" id="imageLouvre">
+                <img id="n1" src="../public/img1.jpg" alt="">
+                <div class="caption">Louvre Müzesi</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="polaroid" id="img2">
+                <img id="n2" src="../public/img2.jpg" alt="">
+                <div class="caption">İstanbul Modern Müzesi</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="polaroid" id="img3">
+                <img id="n3" src="../public/img3.jpg" alt="">
+                <div class="caption">Van Gogh Müzesi</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="polaroid" id="img4">
+                <img id="n4" src="../public/img4.jpg" alt="">
+                <div class="caption">Vatikan Müzesi</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="polaroid" id="img5">
+                <img id="n5" src="../public/img5.jpg" alt="">
+                <div class="caption">Ermitaj Müzesi</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="polaroid" id="img6">
+                <img id="n6" src="../public/img6.jpg" alt="">
+                <div class="caption">İstanbul Arkeoloji Müzesi</div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Louvre Museum</h2>
+            </div>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade slider1">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../public/r1.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade slider1">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../public/r2.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade slider1">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../public/r3.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot dot1" onclick="currentSlide1(1)"></span>
+                <span class="dot dot1" onclick="currentSlide1(2)"></span>
+                <span class="dot dot1" onclick="currentSlide1(3)"></span>
+            </div>
+            <div class="modal-body">
+                <p>Louvre Müzesi; dünyanın en büyük sanat müzesidir. Fransa'nın başkenti Paris'te, Louvre Sarayı'na kurulmuştur. Şehrin içinden geçen Sen Nehri'nin kıyısında yer alır. Tarih öncesi çağlardan, 21. yüzyıla kadar uzanan, oldukça geniş bir koleksiyon
+                    yelpazesi vardır. Yaklaşık 35.000 kadar tarihi sanat eseri, 72.735 metrekarelik bir alanda sergilenmektedir. 2017 yılında, 8.1 milyon ziyaretçi oranıyla dünyanın en çok ziyaret edilen sanat müzesi seçilmiştir.
+                </p>
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <h3>Frsansa</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>İstanbul Modern Sanat Müzesi</h2>
+            </div>
+            <div class="modal-body">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade slider2">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../public/t1.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider2">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../public/t2.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider2">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../public/t3.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot dot2" onclick="currentSlide2(1)"></span>
+                    <span class="dot dot2" onclick="currentSlide2(2)"></span>
+                    <span class="dot dot2" onclick="currentSlide2(3)"></span>
+                </div>
+                <p>İstanbul Modern Sanat Müzesi veya kısaca İstanbul Modern, Türkiye'nin ilk modern sanat müzesidir. Eczacıbaşı ailesinin öncülüğünde, İstanbul Kültür Sanat Vakfı (İKSV) tarafından kurulan müze, 11 Aralık 2004'te ziyarete açıldı. Karaköy
+                    limanında, Mimar Sinan Üniversitesi Güzel Sanatlar Fakültesi ile Tophane-i Amire arasında yer alan İstanbul Modern, T.C. Denizcilik İşletmeleri için kuru yük deposu olarak inşa edilen 4 no'lu antrepo binasının müzeye dönüştürülmesi
+                    ile hayata geçirildi. 2003 yılında gerçekleştirilen 8. Uluslararası İstanbul Bienali'ne de ev sahipliği yapan bina, başbakanlık tarafından müze olarak tahsis edildı ve kendisinin Türkiye'ye AB üyeliği için müzareke tarihi verilecek
+                    olan 17 Aralık tarihinden önce yapımının tamamlanması isteği üzerine 11 Aralık 2004'te hizmete açıldı.</p>
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <h3>İstanbul</h3>
+            </div>
+        </div>
+
+    </div>
+    <!-- The Modal -->
+    <div id="myModal3" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Van Gogh Müzesi</h2>
+            </div>
+            <div class="modal-body">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade slider3">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../public/e1.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider3">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../public/e2.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider3">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../public/e3.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot dot3" onclick="currentSlide3(1)"></span>
+                    <span class="dot dot3" onclick="currentSlide3(2)"></span>
+                    <span class="dot dot3" onclick="currentSlide3(3)"></span>
+                </div>
+                <p>Van Gogh Müzesi, Hollanda'nın başkenti Amsterdam'da bulunan, Hollandalı ressam Vincent van Gogh'un çalışmalarının sergilendiği müzedir. Müze dünyada Van Gogh'un resim ve çizimlerinin sergilendiği en büyük müzedir. Müzeyi 2014 yılında 1.6
+                    milyon kişi ziyaret etmiştir. Müze ulusal bir müze özelliği taşımaktadır. Müze binası Gerrit Rietveld tarafından yapılmış ve 1973 yılında açılmıştır. 7 Aralık 2002 tarihinde bazı resimler müzeden çalınmış, ancak çalınan tablolar yerine
+                    bir daha konulamamıştır.</p>
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <h3>Amsterdam</h3>
+            </div>
+        </div>
+
+    </div>
+    <!-- The Modal -->
+    <div id="myModal4" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Vatikan Müzesi</h2>
+            </div>
+            <div class="modal-body">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade slider4">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../public/a1.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider4">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../public/a2.jpeg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider4">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../public/a3.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot dot4" onclick="currentSlide4(1)"></span>
+                    <span class="dot dot4" onclick="currentSlide4(2)"></span>
+                    <span class="dot dot4" onclick="currentSlide4(3)"></span>
+                </div>
+                <p>Vatikan Müzeleri, Vatikan'da bulunan dünyanın en büyük müzelerinden birisidir. Bu müze Roma Katolik Kilisesi tarafından Rönesans'ta inşa edilmiş olup, dünyanın önemli heykellerine ev sahipliği yapan önemli bir binadır. Toplamda, Sistine
+                    Şapeli ile birlikte toplam 54 galeri ("sala") bulunmaktadır. Ziyaretçiler Sistine Şapeli'ne 53 galeriyi gezdikten sonra verilen ek sadaka ile girebilirler.</p>
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <h3>İtalya</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal5" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Ermitaj Müzesi</h2>
+            </div>
+            <div class="modal-body">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade slider5">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../public/u1.jpeg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider5">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../public/u2.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider5">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../public/u3.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot dot5" onclick="currentSlide5(1)"></span>
+                    <span class="dot dot5" onclick="currentSlide5(2)"></span>
+                    <span class="dot dot5" onclick="currentSlide5(3)"></span>
+                </div>
+                <p>Ermitaj Müzesi, Rusya’nın Sankt-Peterburg şehrinde yer alan bir sanat ve kültür müzesidir. Dünyanın en büyük ve eski müzelerinden olan Ermitaj Müzesi, 1764 yılında Çariçe II. Katerina tarafından kurulmuş, ancak 1852 yılında kamunun hizmetine
+                    açılmıştır. Yaklaşık 3 milyon sanat eserinden oluşan müzenin koleksiyonunun çok az bir kısmı sergilenebilmektedir. Ermitaj Müzesi dünyanın en büyük resim koleksiyonuna sahiptir. Müze en çok tablo koleksiyonu bulunması nedeniyle Guinness
+                    Rekorlar Kitabında yer alır.</p>
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <h3>Rusya</h3>
+            </div>
+        </div>
+
+    </div>
+    <!-- The Modal -->
+    <div id="myModal6" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>İstanbul Arkeoloji Müzesi</h2>
+            </div>
+            <div class="modal-body">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade slider6">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../public/k1.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider6">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../public/k2.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade slider6">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../public/k3.jpg" style="width:100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides6(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot dot6" onclick="currentSlide6(1)"></span>
+                    <span class="dot dot6" onclick="currentSlide6(2)"></span>
+                    <span class="dot dot6" onclick="currentSlide6(3)"></span>
+                </div>
+                <p>İstanbul Arkeoloji Müzesi, çeşitli kültürlere ait bir milyonu aşkın eserle, dünyanın en büyük müzeleri arasındadır. Türkiye'nin müze olarak inşa edilen en eski binasıdır. 19. yüzyılın sonlarında ressam ve müzeci Osman Hamdi Bey tarafından
+                    İmparatorluk Müzesi olarak kurulmuştur ve 13 Haziran 1891'de ziyarete açılmıştır. Müzenin koleksiyonunda, Balkanlar'dan Afrika'ya, Anadolu ve Mezopotamya'dan Arap Yarımadası'na ve Afganistan'a kadar, Osmanlı İmparatorluğu'nun sınırları
+                    içinde yer alan medeniyetlere ait eserler bulunmaktadır. Müze üç ana birimden oluştuğu için İstanbul Arkeoloji Müzeleri olarak adlandırılmaktadır. Arkeoloji Müzesi (ana bina) Eski Şark Eserleri Müzesi Çinili Köşk Müzesi</p>
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <h3>İstanbul</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="../public/modal1.js"></script>
+    <script src="../public/slider1.js"></script>
+    <script src="../public/slider2.js"></script>
+    <script src="../public/slider3.js"></script>
+    <script src="../public/slider4.js"></script>
+    <script src="../public/slider5.js"></script>
+    <script src="../public/slider6.js"></script>
+</body>
+
+</html>
